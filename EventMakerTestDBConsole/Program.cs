@@ -11,9 +11,10 @@ namespace EventMakerTestDBConsole
 {
     class Program
     {
+        //Update-Package Microsoft.CodeDom.Providers.DotNetCompilerPlatform -r
         static void Main(string[] args)
         {
-            const string serverUrl = "http://localhost:44346";
+            const string serverUrl = "http://localhost:54884";
             HttpClientHandler handler = new HttpClientHandler();
             handler.UseDefaultCredentials = true;
             using (var client = new HttpClient(handler))
@@ -32,6 +33,7 @@ namespace EventMakerTestDBConsole
                         foreach (var guest in Guestlist)
                             Console.WriteLine(guest);
                     }
+                    Console.WriteLine("ee");
                 }
                 catch (Exception)
                 {
