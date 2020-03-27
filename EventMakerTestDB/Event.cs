@@ -21,5 +21,10 @@ namespace EventMakerTestDB
         public string Place { get; set; }
 
         public DateTime? Date { get; set; }
+
+        public override string ToString()
+        {
+            return $"({Id}), {Name}, {Place}, {Date}\n\t{Description}";
+        }
     }
 }
