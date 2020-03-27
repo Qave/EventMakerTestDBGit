@@ -24,6 +24,7 @@ namespace EventMakerTestDBConsole
 
                 try
                 {
+                    Console.WriteLine("heh");
                     var response = client.GetAsync("api/Events").Result;
                     if (response.IsSuccessStatusCode)
                     {
