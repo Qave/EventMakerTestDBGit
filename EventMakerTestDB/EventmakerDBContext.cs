@@ -10,6 +10,7 @@ namespace EventMakerTestDB
         public EventmakerDBContext()
             : base("name=EventmakerDBContext")
         {
+            base.Configuration.ProxyCreationEnabled = false;
         }
 
         public virtual DbSet<Event> Events { get; set; }
