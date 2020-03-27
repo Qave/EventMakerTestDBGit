@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EventMakerTestDB\EventMakerTestDB.csproj">
+      <Project>{add5b978-6cdb-4d95-ab9a-aa185e821dda}</Project>
+      <Name>EventMakerTestDB</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
